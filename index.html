@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <button class="logo">
+                <img src="assests/image/crop-logo.jpg">
+            </button>
+            <button>
+                <a href="about_India">About</a>
+            </button>
+            <button><a href="gallery">Gallery</a></button>
+            <button><a href="Contact Us">Contact Us</a></button>
+            <button class="cart-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="#79274d">
+                    <path d="M8 16H15.2632C19.7508 16 20.4333 13.1808 21.261 9.06908C21.4998 7.88311 21.6192 7.29013 21.3321 6.89507C21.045 6.5 20.4947 6.5 19.3941 6.5H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M8 16L5.37873 3.51493C5.15615 2.62459 4.35618 2 3.43845 2H2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    <path d="M8.88 16H8.46857C7.10522 16 6 17.1513 6 18.5714C6 18.8081 6.1842 19 6.41143 19H17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="10.5" cy="20.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                    <circle cx="17.5" cy="20.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <span class="cart-count" id="items">0</span>
+            </button>
+        </nav>
+    </div>
+    <div class="places">
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/t1.jpg"> -->
+                <h1>Andra Pradesh</h1>
+            </div>
+            <div class="theback">
+                <h1>Amaravati</h1>
+                <h2>State</h2>
+                <h3>Y. S. Jagan Mohan Reddy</h3>
+                <!-- <h4>A.K</h4> -->
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Arunachal Pradesh</h1>
+            </div>
+            <div class="theback">
+                <h1>Itanagar</h1>
+                <h2>State</h2>
+                <h3>Pema Khandu</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Assam</h1>
+            </div>
+            <div class="theback">
+                <h1>Disspur</h1>
+                <h2>State</h2>
+                <h3>Himanta Biswa Sarma</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Bihar</h1>
+            </div>
+            <div class="theback">
+                <h1>Patna</h1>
+                <h2>State</h2>
+                <h3>Nitish Kumar</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Chattisgrah</h1>
+            </div>
+            <div class="theback">
+                <h1>Raipur</h1>
+                <h2>State</h2>
+                <h3>Vishnu Deo Sai</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Goa</h1>
+            </div>
+            <div class="theback">
+                <h1>Panaji</h1>
+                <h2>State</h2>
+                <h3>Pramod Sawant</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Gujarat</h1>
+            </div>
+            <div class="theback">
+                <h1>GandhiNagar</h1>
+                <h2>State</h2>
+                <h3>Bhupendrabhai Patel</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Harayana</h1>
+            </div>
+            <div class="theback">
+                <h1>Chandigarh</h1>
+                <h2>State</h2>
+                <h3>Nayab Singh Saini</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Himachal Pradesh</h1>
+            </div>
+            <div class="theback">
+                <h1>Shimla</h1>
+                <h2>State</h2>
+                <h3>Sukhvinder Singh Sukhu</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Jharkhand</h1>
+            </div>
+            <div class="theback">
+                <h1>Ranchi</h1>
+                <h2>State</h2>
+                <h3>Champai Soren</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Karnataka</h1>
+            </div>
+            <div class="theback">
+                <h1>Banglore</h1>
+                <h2>State</h2>
+                <h3>Siddaramaiah</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Kerala</h1>
+            </div>
+            <div class="theback">
+                <h1>Thiruvananthapuram</h1>
+                <h2>State</h2>
+                <h3>Pinarayi Vijayan</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Madhya Pradesh</h1>
+            </div>
+            <div class="theback">
+                <h1>Bhopal</h1>
+                <h2>State</h2>
+                <h3>Mohan Yadav</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Maharashtra </h1>
+            </div>
+            <div class="theback">
+                <h1>Mumbai</h1>
+                <h2>State</h2>
+                <h3>Eknath Shinde</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Manipur</h1>
+            </div>
+            <div class="theback">
+                <h1>Imphal</h1>
+                <h2>State</h2>
+                <h3>N. Biren Singh</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Meghalaya</h1>
+            </div>
+            <div class="theback">
+                <h1>Shillong</h1>
+                <h2>State</h2>
+                <h3>Conrad Sangma</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Mizoram</h1>
+            </div>
+            <div class="theback">
+                <h1>Aizwal</h1>
+                <h2>State</h2>
+                <h3>Lalduhoma</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Nagaland</h1>
+            </div>
+            <div class="theback">
+                <h1>Kohima</h1>
+                <h2>State</h2>
+                <h3>Neiphiu Rio</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Odissa</h1>
+            </div>
+            <div class="theback">
+                <h1>Bhuvneshwar</h1>
+                <h2>State</h2>
+                <h3>Naveen Patnaik</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Punjab</h1>
+            </div>
+            <div class="theback">
+                <h1>Chandigarh</h1>
+                <h2>State</h2>
+                <h3>Bhagwant Mann</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Rajasthan</h1>
+            </div>
+            <div class="theback">
+                <h1>Jaipur</h1>
+                <h2>State</h2>
+                <h3>Bhajan Lal Sharma</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Sikkim</h1>
+            </div>
+            <div class="theback">
+                <h1>Gangtok</h1>
+                <h2>State</h2>
+                <h3>Prem Singh Tamang</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Tamil Nadu</h1>
+            </div>
+            <div class="theback">
+                <h1>Chennai</h1>
+                <h2>State</h2>
+                <h3>M. K. Stalin</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Telangana</h1>
+            </div>
+            <div class="theback">
+                <h1>Hyderabad</h1>
+                <h2>State</h2>
+                <h3>Revanth Reddy</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Tripura</h1>
+            </div>
+            <div class="theback">
+                <h1>Agartala</h1>
+                <h2>State</h2>
+                <h3>Manik Saha</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Uttarakhand</h1>
+            </div>
+            <div class="theback">
+                <h1>Dehradun</h1>
+                <h2>State</h2>
+                <h3>Pushkar Singh Dhami</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>Uttar Pradesh</h1>
+            </div>
+            <div class="theback">
+                <h1>Lucknow</h1>
+                <h2>State</h2>
+                <h3>Yogi Adityanath </h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="thefront">
+                <!-- <img src="assests/image/delhi.jpg"> -->
+                <h1>West Bengal</h1>
+            </div>
+            <div class="theback">
+                <h1>Kolkatta</h1>
+                <h2>state/h2>
+                <h3>Mamata Banerjee</h3>
+                <div class="add">
+                    <span id="plus" onclick="addFunction()">+</span>
+                    <span id="sub" onclick="minusFunction()">-</span>
+                    <span> 99</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carRun">
+        <h1 id="txt">Added to Cart</h1>
+        <img src="assests/image/car3.gif" id="car">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
